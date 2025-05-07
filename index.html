@@ -3,20 +3,35 @@
         <title>NEXT Careers Quiz - A Sheffield Hallam University Project</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- OpenGraph Meta Tags -->
+        <meta property="og:title" content="NEXT Careers Quiz - A Sheffield Hallam University Project">
+        <meta property="og:description" content="An interactive career quiz powered by NEXT1 and developed by Sheffield Hallam University students.">
+        <meta property="og:image" content="assets/thumbnail.png">
+        <meta property="og:url" content="https://next-careers-quiz.onrender.com">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="NEXT Careers Quiz - A Sheffield Hallam University Project">
+        <meta name="twitter:description" content="An interactive career quiz powered by NEXT1 and developed by Sheffield Hallam University students.">
+        <meta name="twitter:image" content="assets/thumbnail.png">
+
         <link href="styles.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="script.js" defer></script>
 
     </head>
     <body >
         <div id="heading" class="min-h-[70vh] w-full flex flex-col md:flex-row bg-cover bg-center bg-no-repeat" style="background-image: url('assets/NEXTQuizBG.png');">
             <!-- Left Section -->
             <div class="w-full md:w-1/2  flex items-center justify-center p-8">
-                <div class="max-w-md">
-                    <h1 class="text-4xl font-bold">NEXT Careers Quiz</h1>
-                    <p class="text-xl mt-4">Are you ready to take it on?</p>
-                    <a class="inline-block mb-3 bg-neutral-900 NextDisplay text-white px-6 py-3 rounded-sm mt-6 hover:bg-neutral-600 transition-colors" href="https://next-careers-quiz.onrender.com/">Launch our product</a>
-                    <b><a class="block underline" href="#features">Check out the features</a></b>
-                    <b><a class="block underline" href="#journey">Check out our development process</a></b>
+                <div class="max-w-md md:text-left text-center">
+                    <h1 class="text-4xl font-bold animate-slide-up">NEXT Careers Quiz</h1>
+                    <p class="text-xl mt-4 animate-slide-up animate-delay-1">Are you ready to take it on?</p>
+                    <a class="inline-block mb-3 bg-neutral-900 NextDisplay text-white px-6 py-3 rounded-sm mt-6 hover:bg-neutral-600 transition-colors animate-slide-up animate-delay-2" href="https://next-careers-quiz.onrender.com/">Launch our product</a>
+                    <b><a class="block underline animate-slide-up animate-delay-3" href="#features">Check out the features</a></b>
+                    <b><a class="block underline animate-slide-up animate-delay-3" href="#journey">Check out our development process</a></b>
                 </div>
             </div>
             
@@ -42,23 +57,70 @@
 
         </div>
 
+        <!-- Tech Stack Section -->
+        <div class="tech-stack-section py-12">
+            <div class="content">
+                <h2>Tools used to build this application</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
+                    <a href="https://render.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 23.png" alt="Render.com" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 24.png" alt="Figma" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 25.png" alt="Blazor" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 26.png" alt="Bootstrap" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 27.png" alt="C#" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://trello.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 28.png" alt="Trello" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 29.png" alt="HTML5" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 30.png" alt="CSS" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://www.w3schools.com/js/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 31.png" alt="JavaScript" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 32.png" alt="MySQL" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                    <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity tech-stack-item" style="opacity: 0;">
+                        <img src="assets/techstackicons/image 33.png" alt="Amazon Web Services" class="w-16 h-16 object-contain hover:scale-110 transition-transform">
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="content" >
             <h2>Features of our Application</h2>
         
             <div id="features">
                 <h3>Interactive Questionnaire</h3>
                 <ul>
-                    <li>User can pick up to 5 answers</li>
+                    <li>User can pick up to 5 answers per question</li>
                     <li>Three stages of questionnaire algorithm</li>
                     <li>Gamified through progress bar</li>
                     <li>Answers get fed into recommendations algorithm</li>
+                    <li>Live Question Branching</li>
                 </ul>
+
+                <figure>
+                    <img src="assets/algorithmexplanation.png" alt="Algorithm Explanation" class="w-full h-auto object-contain">
+                    <figcaption class="italic text-center">The algorithm that powers the questionnaire</figcaption>
+                </figure>
             
                 <h3>The Recommendations Algorithm</h3>
-                <ul>
-                    <li>Jobs from the NEXT website get scraped and categorised through key words while user is answering the quiz</li>
-                    <li>When user completes quiz, their answers are fed into the recommendations algorithm and jobs and a personality are recommended to them</li>
-                </ul>
+                <p>Jobs from the NEXT website get scraped and categorised through key words while user is answering the quiz.</p>
+                <p>When user completes quiz, their answers are fed into the recommendations algorithm and jobs and a personality are recommended to them</p>
+    
             
                 <h3>Account Features</h3>
                 <p>Log in with your email and an automatically generated one-time password.</p>
@@ -70,7 +132,10 @@
                 <p>Employers can see statistics from candidates who have used the application and use it to see trends in skills and candidates.</p>
             
             </div>
+        </div>
 
+        <div class="bg-neutral-100">
+        <div class="content">
             <div id="journey">
                 <h2>The (Agile) Journey</h2>
             
@@ -95,6 +160,16 @@
                 <p>To deploy our application on the web, we used Render, which allowed us to deploy directly from our GitHub repository.</p>
             </div>
         </div>
+        </div>
+    </div>
         
+        <footer class="bg-neutral-900  py-8 ">
+            <div class="content text-center">
+                <p class="text-sm text-white opacity-80">
+                    Thanks to Kish Gokani from NEXT for being our client during this process.<br>
+                    Powered by NEXT1 (and a lot of Dominos Pizza)
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
