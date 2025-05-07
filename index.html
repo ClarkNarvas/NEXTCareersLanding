@@ -1,12 +1,99 @@
-<html>
+<html lang="en">
     <head> 
         <title>NEXT Careers Placeholder</title>
-    </head>
-    <body>
-        The Sheffield Hallam University Software Projects Showcase is coming soon <br>
-        The NEXT Careers landing page will be available here. <br>
-        Employers will be able to see our LinkedIn profiles and will be able to access the Production version of our project available <a href="https://next-careers-quiz.onrender.com/">here</a>
-        In the meantime, here's Steve:
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vhh_GeBPOhs?si=rHbTBq8XQzMlm_BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body >
+        <div id="heading" class="min-h-[70vh] w-full flex flex-col md:flex-row bg-cover bg-center bg-no-repeat" style="background-image: url('assets/NEXTQuizBG.png');">
+            <!-- Left Section -->
+            <div class="w-full md:w-1/2  flex items-center justify-center p-8">
+                <div class="max-w-md">
+                    <h1 class="text-4xl font-bold">NEXT Careers Quiz</h1>
+                    <p class="text-xl mt-4">Are you ready to take it on?</p>
+                    <a class="inline-block mb-3 bg-neutral-900 NextDisplay text-white px-6 py-3 rounded-sm mt-6 hover:bg-neutral-600 transition-colors" href="https://next-careers-quiz.onrender.com/">Take the Quiz</a>
+                    <b><a class="block underline" href="#features">Check out the features</a></b>
+                    <b><a class="block underline" href="#journey">Check out our development process</a></b>
+                </div>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="w-full md:w-1/2 flex items-end">
+                <div class="w-full">
+                    <img src="assets/productdemoimage.png" alt="Product Demo" class="w-full h-auto object-contain">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="credit-box bg-white border-2 border-neutral-300 border-1 md:w-1/2 mx-auto w-full p-1 shadow-lg" style="margin-top: -50px; z-index: 100; position: relative;">
+
+            <div class="p-4"><h2 class="text-xl">Powered by NEXT1</h2></div>
+            <a class="p-4 block border-t-2 border-neutral-300 hover:bg-neutral-100 " href="https://www.linkedin.com/in/clarknarvas/"><i class="bi bi-linkedin"></i> Clark Narvas</a>
+            <a class="p-4 block border-t-2 border-neutral-300 hover:bg-neutral-100 " href="https://www.linkedin.com/in/kch9876/"><i class="bi bi-linkedin"></i> Kyddy Chen</a>
+            <a class="p-4 block border-t-2 border-neutral-300 hover:bg-neutral-100 " href="https://www.linkedin.com/in/ade-ona/"><i class="bi bi-linkedin"></i> Yemi Onafuwa </a>
+            <a class="p-4 block border-t-2 border-neutral-300 hover:bg-neutral-100 " href="https://www.linkedin.com/in/timchinye/"><i class="bi bi-linkedin"></i> Tim Chinye </a>
+            <a class="p-4 block border-t-2 border-neutral-300 hover:bg-neutral-100 " href="https://www.linkedin.com/in/dan-mk-38b612354/"><i class="bi bi-linkedin"></i> Daniel Mironuka-kupra </a>
+
+
+
+        </div>
+
+        <div class="content" >
+            <h2>Features of our Application</h2>
+        
+            <div id="features">
+                <h3>Interactive Questionnaire</h3>
+                <ul>
+                    <li>User can pick up to 5 answers</li>
+                    <li>Three stages of questionnaire algorithm</li>
+                    <li>Gamified through progress bar</li>
+                    <li>Answers get fed into recommendations algorithm</li>
+                </ul>
+            
+                <h3>The Recommendations Algorithm</h3>
+                <ul>
+                    <li>Jobs from the NEXT website get scraped and categorised through key words while user is answering the quiz</li>
+                    <li>When user completes quiz, their answers are fed into the recommendations algorithm and jobs and a personality are recommended to them</li>
+                </ul>
+            
+                <h3>Account Features</h3>
+                <p>Log in with your email and an automatically generated one-time password.</p>
+            
+                <h3>Candidate Dashboard</h3>
+                <p>Candidate can save their results and see jobs they’ve been recommended.</p>
+            
+                <h3>Employers Dashboard</h3>
+                <p>Employers can see statistics from candidates who have used the application and use it to see trends in skills and candidates.</p>
+            
+            </div>
+
+            <div id="journey">
+                <h2>The (Agile) Journey</h2>
+            
+                <h3>Project Plan</h3>
+                <p>At the beginning of the project, we analysed the brief and broke it down into user stories. We also identified the major stakeholders involved.</p>
+                <p>To organise tasks throughout the planning phase and during the upcoming Sprint Week, we utilised Trello and created useful planning tools like a Gantt Chart and a C4 diagram.</p>
+            
+                <h3>Design</h3>
+                <p>During the design phase, we primarily employed the Figma ecosystem to map out essential elements of our application, including wireframes, the questionnaire algorithm, and the questions to be included.</p>
+                <p>We revisited the design phase multiple times throughout the project based on client feedback. This feedback prompted the development of a web scraper to automate result gathering for the questionnaire, necessitating several adjustments to our design.</p>
+            
+                <h3>Development (Sprint Weeks)</h3>
+                <p>The goal of the first Sprint Week was to build the core product—namely, the questionnaire and the algorithm that powers it. We organised our team into back-end and front-end groups. The back-end team refined the algorithm design for implementation, while the front-end team developed a gamified user interface for the questionnaire, complete with a progress bar and a skeleton completion page.</p>
+                <p>After the first Sprint Week, we met with the client and received detailed feedback, which tasked us with creating a web scraper to extract job listings live from the NEXT website.</p>
+                <p>During the second Sprint Week, we focused on refining the recommendations algorithm, building the login system, and developing the admin management system.</p>
+                <p>Throughout development, we utilised Git and GitHub, managing multiple branches that were merged into the main branch.</p>
+            
+                <h3>Unit Testing</h3>
+                <p>Once development was complete, we coordinated unit testing to ensure every component of the application had full functionality.</p>
+            
+                <h3>Production Deployment</h3>
+                <p>To deploy our application on the web, we used Render, which allowed us to deploy directly from our GitHub repository.</p>
+            </div>
+        </div>
+        
+    </body>
 </html>
